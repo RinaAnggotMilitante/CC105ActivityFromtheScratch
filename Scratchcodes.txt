@@ -1,0 +1,22 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+//import 'package:scalfold/main.dart';
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueAccent,
+        appBar: AppBar(
+          title: Text('Mekeni'),
+          backgroundColor: Colors.amberAccent[900],
+        ),
+        body: Center(
+          child: Image(
+            image: NetworkImage(
+                'https://images2.minutemediacdn.com/image/upload/c_crop,h_1188,w_2121,x_0,y_142/v1554733134/shape/mentalfloss/78996-istock-682216682.jpg?itok=5o35rflV'),
+          ),
+        ),
+      ),
+    ),
+  );
+}
